@@ -1,0 +1,5 @@
+sudo docker-compose up,down , build
+sudo docker-compose run --rm api npm install
+ls -la
+sudo docker run --network api-network --name redis --rm redis:5-alpine
+

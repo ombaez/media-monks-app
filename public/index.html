@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Express-Docker-Compose-Redis Test</title>
+  </head>
+  <body>
+    <div>Media Monks</div>
+
+    <form id="message-form">
+      <input id="user-key" type="text" placeholder="Insert key" />
+      <input id="user-value" type="text" placeholder="Insert value" />
+      <button type="button" onclick="handlerSubmit()">Submit!</button>
+    </form>
+
+    <ul id="messages"></ul>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
