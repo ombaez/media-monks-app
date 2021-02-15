@@ -1,18 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Express-Docker-Compose-Redis Test</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link href="styles.css" rel="stylesheet" />
+    <title>Express-Redis-SocketIo-Docker-ComposeTest</title>
   </head>
   <body>
-    <div>Media Monks</div>
+    <div class="container">
+      <form id="message-form">
+        <h1>Media Monks</h1>
+        <input
+          class="col-sm-3 col-4"
+          id="user-key"
+          type="text"
+          placeholder="Insert key"
+        />
+        <input
+          class="col-sm-3 col-4"
+          id="user-value"
+          type="text"
+          placeholder="Insert value"
+        />
+        <button
+          class="col-sm-6 col-4 btn btn-success"
+          type="button"
+          onclick="handlerSubmit()"
+        >
+          Submit!
+        </button>
+      </form>
 
-    <form id="message-form">
-      <input id="user-key" type="text" placeholder="Insert key" />
-      <input id="user-value" type="text" placeholder="Insert value" />
-      <button type="button" onclick="handlerSubmit()">Submit!</button>
-    </form>
-
-    <ul id="messages"></ul>
+      <ul id="messages"></ul>
+    </div>
 
     <script src="/socket.io/socket.io.js"></script>
     <script src="script.js"></script>

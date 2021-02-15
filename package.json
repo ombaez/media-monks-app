@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon server.js",
-    "test": "jest --detectOpenHandles --collect-coverage --watchAll"
+    "test": "jest --detectOpenHandles --verbose --collect-coverage --watchAll"
   },
   "author": "",
   "license": "ISC",

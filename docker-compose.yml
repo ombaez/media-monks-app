@@ -5,10 +5,11 @@ services:
     image: redis:5-alpine
     ports:
       - 6379:6379
-    command: ["redis-server", "--bind", "redis", "--port", "6379"]
     networks:
       - default
   api:
+    build:
+      context: .
     image: node:10-alpine
     links:
       - redis
@@ -16,13 +17,15 @@ services:
     depends_on:
       - redis
     volumes:
-      - ./:/app
+      - ./src:/app/src
     ports:
       - 3000:3000
     command: npm start
     networks:
       - default
   test:
+    build:
+      context: .
     image: node:10-alpine
     volumes:
       - ./src:/app/src
