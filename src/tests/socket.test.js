@@ -3,7 +3,7 @@ const expect = chai.expect;
 const should = chai.should();
 const io = require("socket.io-client");
 
-test("Check-> Connection", (done) => {
+test("Connection with sockets must return pong", (done) => {
   const socket = io("http://localhost:3000");
   socket.emit("ping", { msg: "ping" });
   socket.on("pong", (data) => {
@@ -12,7 +12,7 @@ test("Check-> Connection", (done) => {
   done();
 });
 
-test("Check-> No Connection", (done) => {
+test("No connection must return not exist", (done) => {
   const socket = io("http://localhost:3001/invalidSocket");
   socket.emit("ping", { msg: "ping" });
   socket.on("pong", (data) => {
@@ -21,7 +21,7 @@ test("Check-> No Connection", (done) => {
   done();
 });
 
-test("Send values to storage", (done) => {
+test("Send values and await for confirm event", (done) => {
   const socket = io("http://localhost:3000");
 
   const newKey = "Test";
