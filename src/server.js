@@ -1,6 +1,6 @@
-const app = require("./index");
+const app = require("../index");
 const socketio = require("socket.io");
-const { set } = require("./src/redis/config");
+const { set, client } = require("./redis/config");
 const PORT = process.env.PORT || 3000;
 
 const expressServer = app.listen(PORT, () =>
