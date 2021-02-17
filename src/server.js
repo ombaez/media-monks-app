@@ -4,7 +4,7 @@ const { set, client } = require("./redis/config");
 const PORT = process.env.PORT || 3000;
 
 const expressServer = app.listen(PORT, () =>
-  console.log(`Listening on ${PORT} for Express-WS-Redis Server`)
+  console.log(`Listening on port ${PORT} for Express-WS-Redis Server`)
 );
 
 const io = socketio(expressServer);

@@ -13,6 +13,8 @@ function handlerSubmit() {
 
 socket.on("confirmStorage", (data) => {
   alert(JSON.stringify(data.message));
+  document.querySelector("#user-key").value = "";
+  document.querySelector("#user-value").value = "";
 });
 
 socket.on("value-error", (data) => {
