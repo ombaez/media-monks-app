@@ -22,6 +22,6 @@ Este comando levantara containers con las imagenes detalladas en el docker-compo
 
 Para verificar que los servicios esten OK, se muestra en la terminal las siguientes leyendas:
 
-** Listening on port 3000 for Express-WS-Redis-Server** --> Confirma el servidor http + sockets.
+**Listening on port 3000 for Express-WS-Redis-Server** --> Confirma el servidor http + sockets.
 
-** Redis client connected ** --> Confirma que el cliente que almacena las key-values esta conectado.
+**Redis client connected** --> Confirma que el cliente que almacena las key-values esta conectado.
