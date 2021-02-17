@@ -75,7 +75,7 @@ Consulta el valor de la key:
 
 http://localhost:3000/value/media
 
-###Responses:
+### Responses:
 
 **_HTTP Status Code: 200_**
 
