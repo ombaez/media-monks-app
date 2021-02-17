@@ -58,18 +58,18 @@ api_test |     ✓ Send values and await for confirm event (4 ms)
 
 La aplicacion se expone en el puerto 3000, mediante un front basico con un formulario para tomar key-values y con el mismo salvar datos en Redis. Mostrara un cartel de confirmación cada vez que se envie informacion.
 
-URL entrada : http://localhost:3000
+**URL entrada** : http://localhost:3000
 
-Ejemplo
+**Ejemplo**
 
 Se envian datos como:
 
-Key: media
-Value: monks
+**_Key: media
+Value: monks_**
 
-URL consulta (HTTP): http://localhost:3000/value/{{key}}
+**URL consulta (HTTP)**: http://localhost:3000/value/{{key}}
 
-Ejemplo
+**Ejemplo**
 
 Consulta el valor de la key:
 
