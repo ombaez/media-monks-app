@@ -1,5 +1,4 @@
 node_modules/
 dump.rdb
 .vscode
-package-lock.json
 coverage/
