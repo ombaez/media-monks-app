@@ -28,7 +28,7 @@ Para verificar que los servicios esten OK, se muestra en la terminal las siguien
 
 **Testing**--> Esta dividido en 2 partes. Server tests y socket tests
 
-Se puede correr independientemente los tests, luego de haber hecho el build, ejecutando:
+Se pueden correr independientemente los tests, luego de haber hecho el build, ejecutando:
 
 ```
 docker-compose up test
@@ -56,11 +56,11 @@ api_test |     ✓ Send values and await for confirm event (4 ms)
 
 ## Funcionamiento
 
-La aplicacion se expone en el puerto 3000, mediante un front basico con un formulario para tomar key-values y mediante el envio del formulario, salvar estos datos en Redis. Mostrara un cartel de confirmación.
+La aplicacion se expone en el puerto 3000, mediante un front basico con un formulario para tomar key-values y con el mismo salvar datos en Redis. Mostrara un cartel de confirmación cada vez que se envie informacion.
 
 URL entrada : http://localhost:3000
 
-Ejemplo:
+Ejemplo
 
 Se envian datos como:
 
@@ -69,7 +69,7 @@ Value: monks
 
 URL consulta (HTTP): http://localhost:3000/value/{{key}}
 
-Ejemplo:
+Ejemplo
 
 Consulta el valor de la key:
 
@@ -101,5 +101,5 @@ Para simular una caida del servicio, se puede ejecutar el comando:
 docker-compose stop
 ```
 
-Este comando detiene cada servicio pero no elimina los containers, lo cual es importante para simluar una caida del servicio pero no del servicio en donde se persisten los datos (Redis).
-Luego levantar nuevamente los servicios y consultar el valor que fue guardado para constatar que ante una caida de servicio la informacion siga persistiendo.
+**Este comando detiene cada servicio pero no elimina los containers, lo cual es importante para simluar una caida del servicio pero no del servicio en donde se persisten los datos (Redis).
+Luego levantar nuevamente los servicios y consultar el valor que fue guardado para constatar que ante una caida de servicio la informacion siga persistiendo.**
