@@ -77,7 +77,7 @@ http://localhost:3000/value/media
 
 Responses:
 
-HTTP Code: 200
+**_HTTP Status Code: 200_**
 
 ```
 {
@@ -87,7 +87,7 @@ HTTP Code: 200
 
 En caso de no encontrar valores, se devuelve:
 
-HTTP Code: 404
+**_HTTP Status Code: 404_**
 
 ```
 {
