@@ -64,7 +64,7 @@ La aplicacion se expone en el puerto 3000, mediante un front basico con un formu
 
 Se envian datos como:
 
-**_Key: media
+**_Key: media ||
 Value: monks_**
 
 **URL consulta (HTTP)**: http://localhost:3000/value/{{key}}
@@ -75,7 +75,7 @@ Consulta el valor de la key:
 
 http://localhost:3000/value/media
 
-Responses:
+###Responses:
 
 **_HTTP Status Code: 200_**
 
